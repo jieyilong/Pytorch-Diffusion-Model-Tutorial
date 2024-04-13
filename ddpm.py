@@ -286,8 +286,8 @@ print("Number of model parameters: ", count_parameters(diffusion))
 
 
 import wandb
-wandb_project = 'gan-test-1'
-wandb_run_name = 'gan-test-1' # 'run' + str(time.time())
+wandb_project = 'ddpm-test-1'
+wandb_run_name = 'ddpm-test-1' # 'run' + str(time.time())
 wandb.login(key="6e65577f21ad2dc82fd80b1ab8ec2217e1796c7b")
 wandb.init(project=wandb_project, name=wandb_run_name, config=None)
 

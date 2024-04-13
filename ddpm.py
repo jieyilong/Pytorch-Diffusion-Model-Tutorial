@@ -315,7 +315,7 @@ for epoch in range(epochs):
             "epoch": epoch,
             "batch": batch_idx,
             "Step Loss": loss.item(),
-            "Avg Loss": noise_prediction_loss / batch_idx + (1 if batch_idx == 0 else 0)
+            "Avg Loss": noise_prediction_loss / (batch_idx + (1 if batch_idx == 0 else 0))
             })
         
     print("\tEpoch", epoch + 1, "complete!", "\tDenoising Loss: ", noise_prediction_loss / batch_idx)
